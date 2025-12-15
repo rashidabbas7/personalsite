@@ -10,7 +10,31 @@
         /* ============================================
    CONTACT SECTION STYLING
    ============================================ */
+@media(max-width:480px){
+    #namelower{
+        display: none;
+    }
+    #projects{
+        font-size: 18px;
+    }
+    #skills{
+        font-size: 18px;
+    }
+    #logo{
+        font-size: 18px;
+    }
+    #about{
+        font-size: 18px;
+    }
+    #home{
+        margin-top: 80px;
+    }
+    #text{
+        font-size: 16px;
+    }
 
+}
+   
 #contact {
     min-height: 100vh;
     padding: 6rem 2rem 4rem;
@@ -736,7 +760,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Rashid Abbbas</div>
+        <div class="logo"><p id="logo">Rashid Abbbas</p></div>
         <ul class="nav-links">
             <li><a href="#home">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -748,8 +772,8 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Rashid Abbas</h1>
-            <p>Hi, I am a passionate developer and computer science enthusiast. I am 3rd sem Computer Science student at Bahauddin Zakaryia University. </p>
+            <h1 id="namelower">Rashid Abbas</h1>
+            <p id="text">Hi, I am a passionate developer and computer science enthusiast. I am 3rd sem Computer Science student at Bahauddin Zakaryia University. </p>
         </div>
         <div class="hero-image">
             <div  class="profile-img">
@@ -759,7 +783,7 @@
     </section>
 
     <section id="about" class="about">
-        <h2>About Me</h2>
+        <h2 id="about">About Me</h2>
         <p>
                         I am a software developer with a strong foundation in Python, HTML, CSS, SQL, C++, and C#, focused on building efficient, scalable, and well-structured applications. I have experience working across both frontend and backend technologies, with a solid understanding of programming fundamentals, data structures, and database design.
 
@@ -771,7 +795,7 @@
     </section>
 
     <section id="skills">
-        <h2>Skills I Know</h2>
+        <h2 id="skills">Skills I Know</h2>
         <div class="skills-grid">
             <div class="skill-category">
                 <h3>Languages</h3>
@@ -796,7 +820,7 @@
     </section>
 
     <section id="articles">
-        <h2>projects</h2>
+        <h2 id="projects">projects</h2>
         <div class="articles-grid">
             <a style="text-decoration: none;" href="https://github.com/rashidabbas7/lawyerdiary"><div class="article-card" onclick="window.open('#', '_blank')">
                 <div style="height: 500px;" class="article-img"><img style="width: 500px;" src="{% static 'images/lawyerdiary.png' %}" alt=""></div>
