@@ -742,7 +742,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#articles">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+            <li><button class="theme-toggle" onclick="toggleTheme()">☀️</button></li>
         </ul>
     </nav>
 
@@ -759,7 +759,7 @@
     </section>
 
     <section id="about" class="about">
-        <h2>Who Am I?</h2>
+        <h2>About Me</h2>
         <p>
                         I am a software developer with a strong foundation in Python, HTML, CSS, SQL, C++, and C#, focused on building efficient, scalable, and well-structured applications. I have experience working across both frontend and backend technologies, with a solid understanding of programming fundamentals, data structures, and database design.
 
@@ -909,10 +909,12 @@
             
             if (html.getAttribute('data-theme') === 'light') {
                 html.removeAttribute('data-theme');
-                btn.textContent = '🌙';
+                btn.textContent = '☀️';
+                console.log("its light")
             } else {
                 html.setAttribute('data-theme', 'light');
-                btn.textContent = '☀️';
+                btn.textContent = '🌙';
+                console.log("its dark");
             }
         }
 
